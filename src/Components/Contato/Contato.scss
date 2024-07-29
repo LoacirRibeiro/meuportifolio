@@ -1,0 +1,138 @@
+/* cores e dimensionamento padrão */
+
+:root{
+    --primaryColor: #00eaff;
+    --primaryHover: hsl(185 ,92%, 41%);
+    --secundariColor:rgb(150, 162, 188);
+    --paragraphColor:rgb(127, 127, 175);
+    --BgColor: #031a30;
+    --formColor:rgb(2, 15, 29);
+    --projectCardColor:#072340;
+    --textColor: #dae4fd;
+    --headerHeight: 3rem;
+}
+
+.contact{
+    .contactContainer{
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+
+        .socialContacts{
+            justify-content: center;
+           
+            h3{
+                color: var(--secundariColor);
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            .cards{
+                justify-content: center;
+                gap: 1rem;
+                
+                .card{
+                    display: grid;
+                    align-items: center;
+                    row-gap: 10px;
+                    padding: 1.5rem;
+                    width: 240px;
+                    background: var(--projectCardColor);
+                    border-radius: 10px;
+                    text-align: center;
+                    
+    
+                    .icon{
+                        color: var(--primaryColor);
+                    }
+    
+                    h4{
+                        color: var(--textColor);
+                        font-size: 18px;
+                    }
+    
+                    .username{
+                        color: var(--secundariColor);
+                        font-weight: 600;
+                    }
+    
+                    a{
+                        justify-content: center;
+                        gap: 5px;
+                        color: var(--primaryColor);
+                        font-weight: 600;
+                        cursor: pointer;
+    
+                        .icon{
+                            font-size: 20px;
+                        }
+                        &:hover{
+                            color: var(--primaryColor);
+                            .icon{
+                                transform: translateX(10px);
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .form{
+            width: 100%;
+            justify-content: center;
+            margin: auto;
+
+            h3{
+                text-align: center;
+                color: var(--secundariColor);
+            }
+
+            form{
+                width: 100%;
+                text-align: center;
+
+                input, textarea{
+                    height: 1rem;
+                    width: 90%;
+                    padding: 1.5rem .5rem;
+                    border-radius: 10px;
+                    background: none;
+                    border: 2px solid var(--secundariColor);
+                    margin: .5rem 0;
+                    outline: none;
+                    color: var(--textColor);
+                    font-weight: 600;
+                    
+
+                    &::placeholder{
+                        color: var(--secundariColor);
+                        opacity: .5;
+                    }
+                }
+
+                textarea{
+                    height: 150px;
+                }
+
+                .formBtn{
+                    display: block;
+                    margin: auto;
+                    width: 90%;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 1rem 0;
+                    background: var(--primaryColor);
+                    color: var(--BgColor);
+                    font-size: 18px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    &:hover{
+                        background: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
