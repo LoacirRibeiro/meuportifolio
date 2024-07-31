@@ -14,13 +14,13 @@ function Navbar() {
 
     // vamos removere o navBar
     const removeNavBar = () => {
-        setActive('navBar ')
+        setActive('navBar')
     }
 
     // o código ocultará uma cor de fundo no cabeçalho
     const [ activeHeader, setActiveHeader] = useState('header');
     const addBg = () => {
-        if(window.scrolly >= 10){
+        if(window.scrollY >= 10){
             setActiveHeader('header activeHeader') 
         }
         else{
@@ -31,10 +31,10 @@ function Navbar() {
 
     return(
         // trocar 'header' por activeHeader
-        <header className={activeHeader}> 
+        <header className= {activeHeader}> 
             <div className="logoDiv">
                 <h1 className="logo">
-                    <a href='#home'>Loacir Ribeiro</a>
+                    <a href='#home'>Ai.</a>
                 </h1>
             </div>
             {/* trocar navBar por active */}
@@ -57,7 +57,7 @@ function Navbar() {
                         <span className="headerNumber">4.</span> Contato</a>  
                     </li>
                     <button className='btn'>
-                        <a href="#Sobe">Resumo</a>
+                        <a href="#Sobre">Resumo</a>
                     </button>
                 </ul>
                 {/* adicionar removeNavBar*/}

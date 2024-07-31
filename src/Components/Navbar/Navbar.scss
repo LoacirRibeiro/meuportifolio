@@ -21,7 +21,7 @@
   height: var(--headerHeight);
   padding: 2rem;
   z-index: 1000;
-  background: var(--projectCardColor);
+  // background: var(--projectCardColor);
 
   .logo a {
     color: var(--textColor);
@@ -99,6 +99,67 @@
 }
 
 .activeHeader {
-  background-color: red;
-  box-shadow: 0 2px 4px red;
+  background-color: var(--projectCardColor);
+  box-shadow: 0 2px 4px rgbe(1, 15, 29, 0.904);
 }
+
+// MEDIA QUERIES======================>
+
+@media screen and (min-width:769px){
+    .toggleNavbar, .closeNavbar{
+      display: none;
+    }
+
+    .header{
+      // background: red;
+      padding: 2.5rem 2rem;
+
+      .navBar{
+        .navLists{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          padding: 0 1rem;
+
+          .navItem{
+            padding: 0 .8rem;
+
+            .navLink{
+              color: var(--textColor);
+              font-size: 1.2rem;
+              font-weight: 600;
+              &:hover{
+                color: var(--primaryColor);
+              }
+
+              .headerNumber{
+                color: var(--primaryColor);
+              }
+            }
+          }
+          .btn{
+            margin-left: .5rem;
+            a{
+              color: var(--primaryColor);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width:960px){
+    .header{
+      padding: 2.5rem 5rem;
+
+      .navBar{
+        .navLists{
+          padding: 0 2rem;
+          .navItem{
+            padding: 0 2rem;
+          }
+        }
+      }
+    }
+  }

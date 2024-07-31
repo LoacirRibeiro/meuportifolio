@@ -91,4 +91,100 @@
   100% {
     transform: translateY(5px);
   }
+}
+.home .leftIcon, .home .rigthEmail {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .home .homeContainer {
+    padding: 5rem 1.5rem;
+  }
+  .home .homeContainer .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .title {
+    font-size: 3.5rem;
+  }
+  .home .homeContainer .subTitle {
+    font-size: 2.1rem;
+  }
+  .home .homeContainer .homeParagraph {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .lowerHomeSectiion .contactBtn {
+    padding: 0.8rem 1.5rem;
+  }
+  .home .homeContainer .lowerHomeSectiion .contactBtn a {
+    font-size: 22px;
+  }
+  .home .homeContainer .scrollDiv {
+    padding-top: 1.5rem;
+  }
+  .home .homeContainer .scrollDiv .icon {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .home .homeContainer {
+    padding: 5rem 1.5rem;
+    width: 70%;
+    margin: auto;
+  }
+  .home .leftIcon, .home .rigthEmail {
+    display: block;
+    position: fixed;
+  }
+  .home .leftIcon .icon, .home .rigthEmail .icon {
+    color: var(--secundariColor);
+  }
+  .home .leftIcon a, .home .rigthEmail a {
+    font-weight: 600;
+    color: var(--secundariColor);
+  }
+  .home .leftIcon .line, .home .rigthEmail .line {
+    margin: auto;
+    content: "";
+    background: var(--secundariColor);
+    height: 100px;
+    width: 1px;
+  }
+  .home .leftIcon {
+    left: 5%;
+    bottom: 0;
+  }
+  .home .leftIcon .socials {
+    gap: 1rem;
+  }
+  .home .leftIcon .socials a {
+    color: var(--textColor);
+  }
+  .home .leftIcon .socials a:hover {
+    color: var(--primaryColor);
+  }
+  .home .rigthEmail {
+    right: 0;
+    bottom: 0;
+  }
+  .home .rigthEmail .emailAddress {
+    transform: rotate(90deg) translate(-90px, 0px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home .homeContainer {
+    padding: 6rem;
+  }
+  .home .homeContainer .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .title {
+    font-size: 5rem;
+  }
+  .home .homeContainer .subTitle {
+    line-height: 2.5rem;
+    font-size: 2.4rem;
+  }
+  .home .homeContainer .homeParagraph {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=Home.css.map */
